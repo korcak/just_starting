@@ -1,0 +1,14 @@
+#Masterworks says it averages 22% return on works of art
+#If investing (x) amount, how long will it take to reach $1,000,000
+#If reinvesting. 
+print("Masterworks Compound Calculator")
+print("How long to reach $1 million reinvesting")
+invest = float(input("How much are you investing"))
+print("Starting investment")
+print(invest)
+x = 0
+while invest < 1000000:
+  invest = invest + (.22 * invest)
+  x = x + 1
+  print(x)
+  print(invest)
